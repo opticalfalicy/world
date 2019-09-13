@@ -1,0 +1,48 @@
+body {
+  background: black;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 178vw;
+}
+
+.body {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 90%;
+}
+
+h1 {
+  /* color: white; */
+  /* outline-style: solid;
+  outline-color: white; */
+  font-size: 40vw;
+  text-align: center;
+  text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
+    1px 1px 0 #999;
+}
+
+h5 {
+  text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
+    1px 1px 0 #999;
+}
+
+h6 {
+  text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
+    1px 1px 0 #999;
+}
+
+.sig {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sig h5 {
+  margin-right: 2%;
+}
