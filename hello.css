@@ -5,7 +5,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 178vw;
+  height: 100vh;
 }
 
 .body {
@@ -14,28 +14,67 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
-  height: 90%;
+  width: 99vw;
+  height: 98vh;
+  transition: 5s;
+}
+
+.body:hover {
+  animation-name: bgtog;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: both; */
+}
+
+@keyframes bgtog {
+  from {
+    box-shadow: 0 0 0 0;
+  }
+  to {
+    box-shadow: 100px 0px 200px 0px #4b0082;
+  }
 }
 
 h1 {
   /* color: white; */
   /* outline-style: solid;
   outline-color: white; */
-  font-size: 40vw;
+  font-family: 'Bungee Inline', cursive;
+
+  /* width: 55vw; */
+  font-size: 16vw;
   text-align: center;
-  text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
-    1px 1px 0 #999;
+  /* text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
+  1px 1px 0 #999; */
+  /* text-shadow: -1px -1px 0 #999; */
+  /* transition: all 1s; */
+  animation-name: liner;
+  animation-duration: 20s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  /* box-shadow: 100px 0px 200px 0px red; */
+  /* animation-fill-mode: forwards; */
 }
 
-h5 {
-  text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
-    1px 1px 0 #999;
-}
-
-h6 {
-  text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
-    1px 1px 0 #999;
+@keyframes liner {
+  0% {
+    text-shadow: -1px -1px 0 #000;
+    /* background: red; */
+  }
+  25% {
+    text-shadow: -1px -1px 0 #270142;
+    /* background: white; */
+  }
+  50% {
+    text-shadow: -1px -1px 0 #4b0082, 1px -1px 0 #850cdb;
+  }
+  75% {
+    text-shadow: -1px -1px 0 #4b0082, 1px -1px 0 #980efa, -1px 1px 0 #1a002c;
+  }
+  100% {
+    text-shadow: -1px -1px 0 #9706ff, 1px -1px 0 #8f0aee, -1px 1px 0 #24013d;
+  }
 }
 
 .sig {
@@ -45,4 +84,15 @@ h6 {
 
 .sig h5 {
   margin-right: 2%;
+  text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
+    1px 1px 0 #999;
+  font-family: 'Black Ops One', cursive;
+}
+
+.sig h6 {
+  text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
+    1px 1px 0 #999;
+}
+
+.sig:hover {
 }
