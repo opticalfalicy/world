@@ -17,24 +17,27 @@ body {
   width: 99vw;
   height: 98vh;
   transition: 5s;
+  box-shadow: 0 0 0 0;
 }
 
 .body:hover {
-  animation-name: bgtog;
+  box-shadow: 100px 0px 200px 0px #4b0082;
+  /* animation-name: bgtog;
   animation-duration: 5s;
   animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
+  transition: 5s;
   /* animation-fill-mode: both; */
 }
 
-@keyframes bgtog {
+/* @keyframes bgtog {
   from {
     box-shadow: 0 0 0 0;
   }
   to {
     box-shadow: 100px 0px 200px 0px #4b0082;
   }
-}
+} */
 
 h1 {
   /* color: white; */
@@ -53,6 +56,17 @@ h1 {
   animation-duration: 20s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  transition: 5s;
+  /* background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  ); */
   /* box-shadow: 100px 0px 200px 0px red; */
   /* animation-fill-mode: forwards; */
 }

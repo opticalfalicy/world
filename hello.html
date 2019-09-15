@@ -28,12 +28,42 @@
         </p>
       <![endif]-->
 
-      <h1>Hello World</h1>
+      <h1 id="color1" onmouseover="colorGen()" onmouseout="colorOff()">
+        Hello World
+      </h1>
       <div class="sig">
         <h5>sincerely,</h5>
         <h6>opticalfalicy</h6>
       </div>
     </div>
-    <script src="" async defer></script>
+    <script>
+      let color1 = document.getElementById('color1');
+      // let rgBG = color1.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+
+      function colorGen() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        // let rndCol = rgb(' + r + ',' + g + ',' + b + ');
+        // color1.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // let rgBG = color1.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        console.log(r, g, b);
+        color1.style.backgroundImage = `linear-gradient(to right, rgb(${r},${g},${b}`;
+      }
+
+      function colorCall() {
+        setInterval(() => {
+          colorGen();
+        }, 1000);
+      }
+
+      function colorOff() {
+        color1.style.backgroundImage = 'none';
+      }
+    </script>
+    <script>
+      // colorGen();
+    </script>
+    <!-- <script src="hello.js" async defer></script> -->
   </body>
 </html>
