@@ -28,7 +28,61 @@
         </p>
       <![endif]-->
 
-      <h1 id="color1" onmouseover="colorGen()" onmouseout="colorOff()">
+      <div class="nodeDiv wDiv">
+        <div
+          id="color1"
+          onmouseover="colorCall()"
+          onmouseout="colorOff()"
+          class="w C"
+        ></div>
+        <div
+          id="color2"
+          onmouseover="colorCall()"
+          onmouseout="colorOff()"
+          class="w D"
+        ></div>
+        <div
+          id="color3"
+          onmouseover="colorCall()"
+          onmouseout="colorOff()"
+          class="w E"
+        ></div>
+        <div
+          id="color4"
+          onmouseover="colorCall()"
+          onmouseout="colorOff()"
+          class="w F"
+        ></div>
+        <div
+          id="color5"
+          onmouseover="colorCall()"
+          onmouseout="colorOff()"
+          class="w G"
+        ></div>
+        <div
+          id="color6"
+          onmouseover="colorCall()"
+          onmouseout="colorOff()"
+          class="w A"
+        ></div>
+        <div
+          id="color7"
+          onmouseover="colorCall()"
+          onmouseout="colorOff()"
+          class="w B"
+        ></div>
+      </div>
+
+      <!-- <div class="nodeDiv bDiv">
+        <div class="b Db"></div>
+        <div class="b Eb"></div>
+        <div class="b Gb"></div>
+        <div class="b Ab"></div>
+        <div class="b Bb"></div>
+      </div> -->
+
+      <!-- <h1 id="color1" onmouseover="colorGen()" onmouseout="colorOff()"> -->
+      <h1>
         Hello World
       </h1>
       <div class="sig">
@@ -38,6 +92,14 @@
     </div>
     <script>
       let color1 = document.getElementById('color1');
+      let color2 = document.getElementById('color2');
+      let color3 = document.getElementById('color3');
+      let color4 = document.getElementById('color4');
+      let color5 = document.getElementById('color5');
+      let color6 = document.getElementById('color6');
+      let color7 = document.getElementById('color7');
+      let color8 = document.getElementById('color8');
+
       // let rgBG = color1.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 
       function colorGen() {
@@ -45,20 +107,45 @@
         const g = Math.floor(Math.random() * 256);
         const b = Math.floor(Math.random() * 256);
         // let rndCol = rgb(' + r + ',' + g + ',' + b + ');
+        event.target.style.backgroundColor =
+          'rgb(' + r + ',' + g + ',' + b + ')';
         // color1.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color2.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color3.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color4.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color5.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color6.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color7.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color8.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color9.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color10.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color11.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        // color12.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
         // let rgBG = color1.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        console.log(r, g, b);
-        color1.style.backgroundImage = `linear-gradient(to right, rgb(${r},${g},${b}`;
+        // console.log(r, g, b);
+        // color1.style.backgroundImage = `linear-gradient(to right, rgb(${r},${g},${b}`;
       }
 
       function colorCall() {
-        setInterval(() => {
+        let start = 0;
+        if (start == 0) {
+          ++start;
           colorGen();
-        }, 1000);
+        } else {
+          setInterval(() => {
+            colorGen();
+          }, 2000);
+        }
       }
 
       function colorOff() {
-        color1.style.backgroundImage = 'none';
+        color1.style.backgroundColor = 'black';
+        color2.style.backgroundColor = 'black';
+        color3.style.backgroundColor = 'black';
+        color4.style.backgroundColor = 'black';
+        color5.style.backgroundColor = 'black';
+        color6.style.backgroundColor = 'black';
+        color7.style.backgroundColor = 'black';
       }
     </script>
     <script>

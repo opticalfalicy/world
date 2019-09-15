@@ -18,6 +18,7 @@ body {
   height: 98vh;
   transition: 5s;
   box-shadow: 0 0 0 0;
+  position: relative;
 }
 
 .body:hover {
@@ -39,12 +40,43 @@ body {
   }
 } */
 
+.nodeDiv {
+  position: absolute;
+  width: 99vw;
+  height: 98vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.nodeDiv div {
+  z-index: 0;
+  position: relative;
+  transition: 2s ease-out;
+}
+
+.wDiv .w {
+  height: 98vh;
+  width: 14vw;
+  z-index: 4;
+  opacity: 0.23;
+}
+
+/* .bDiv {
+  z-index: 3;
+}
+
+.bDiv .b {
+  height: 49vh;
+  width: 7vw;
+} */
+
 h1 {
   /* color: white; */
   /* outline-style: solid;
   outline-color: white; */
   font-family: 'Bungee Inline', cursive;
-
+  position: relative;
+  z-index: 2;
   /* width: 55vw; */
   font-size: 16vw;
   text-align: center;
@@ -94,19 +126,27 @@ h1 {
 .sig {
   display: flex;
   justify-content: flex-start;
+  position: relative;
+  z-index: 5;
+  height: 2vh;
+  transition: 1s;
+  opacity: 0;
+}
+.sig:hover {
+  opacity: 0.6;
+  z-index: 5;
 }
 
 .sig h5 {
   margin-right: 2%;
-  text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
-    1px 1px 0 #999;
+  text-shadow: -1px -1px 0 #d4af37, 1px -1px 0 #d4af37, -1px 1px 0 #d4af37,
+    1px 1px 0 #d4af37;
   font-family: 'Black Ops One', cursive;
+  position: relative;
 }
 
 .sig h6 {
-  text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
-    1px 1px 0 #999;
-}
-
-.sig:hover {
+  text-shadow: -1px -1px 0 #d4af37, 1px -1px 0 #d4af37, -1px 1px 0 #d4af37,
+    1px 1px 0 #d4af37;
+  position: relative;
 }
