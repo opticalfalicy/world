@@ -1,7 +1,6 @@
 body {
   background: black;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100vw;
@@ -23,22 +22,8 @@ body {
 
 .body:hover {
   box-shadow: 100px 0px 200px 0px #4b0082;
-  /* animation-name: bgtog;
-  animation-duration: 5s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite; */
   transition: 5s;
-  /* animation-fill-mode: both; */
 }
-
-/* @keyframes bgtog {
-  from {
-    box-shadow: 0 0 0 0;
-  }
-  to {
-    box-shadow: 100px 0px 200px 0px #4b0082;
-  }
-} */
 
 .nodeDiv {
   position: absolute;
@@ -61,56 +46,25 @@ body {
   opacity: 0.23;
 }
 
-/* .bDiv {
-  z-index: 3;
-}
-
-.bDiv .b {
-  height: 49vh;
-  width: 7vw;
-} */
-
 h1 {
-  /* color: white; */
-  /* outline-style: solid;
-  outline-color: white; */
   font-family: 'Bungee Inline', cursive;
   position: relative;
   z-index: 2;
-  /* width: 55vw; */
   font-size: 16vw;
   text-align: center;
-  /* text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999,
-  1px 1px 0 #999; */
-  /* text-shadow: -1px -1px 0 #999; */
-  /* transition: all 1s; */
   animation-name: liner;
   animation-duration: 20s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   transition: 5s;
-  /* background-image: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  ); */
-  /* box-shadow: 100px 0px 200px 0px red; */
-  /* animation-fill-mode: forwards; */
 }
 
 @keyframes liner {
   0% {
     text-shadow: -1px -1px 0 #000;
-    /* background: red; */
   }
   25% {
     text-shadow: -1px -1px 0 #270142;
-    /* background: white; */
   }
   50% {
     text-shadow: -1px -1px 0 #4b0082, 1px -1px 0 #850cdb;

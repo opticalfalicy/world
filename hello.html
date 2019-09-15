@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js">
-  <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,13 +16,6 @@
   </head>
   <body>
     <div class="body">
-      <!--[if lt IE 7]>
-        <p class="browsehappy">
-          You are using an <strong>outdated</strong> browser. Please
-          <a href="#">upgrade your browser</a> to improve your experience.
-        </p>
-      <![endif]-->
-
       <div class="nodeDiv wDiv">
         <div
           id="color1"
@@ -73,15 +61,6 @@
         ></div>
       </div>
 
-      <!-- <div class="nodeDiv bDiv">
-        <div class="b Db"></div>
-        <div class="b Eb"></div>
-        <div class="b Gb"></div>
-        <div class="b Ab"></div>
-        <div class="b Bb"></div>
-      </div> -->
-
-      <!-- <h1 id="color1" onmouseover="colorGen()" onmouseout="colorOff()"> -->
       <h1>
         Hello World
       </h1>
@@ -100,30 +79,12 @@
       let color7 = document.getElementById('color7');
       let color8 = document.getElementById('color8');
 
-      // let rgBG = color1.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-
       function colorGen() {
         const r = Math.floor(Math.random() * 256);
         const g = Math.floor(Math.random() * 256);
         const b = Math.floor(Math.random() * 256);
-        // let rndCol = rgb(' + r + ',' + g + ',' + b + ');
         event.target.style.backgroundColor =
           'rgb(' + r + ',' + g + ',' + b + ')';
-        // color1.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color2.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color3.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color4.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color5.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color6.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color7.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color8.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color9.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color10.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color11.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // color12.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // let rgBG = color1.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-        // console.log(r, g, b);
-        // color1.style.backgroundImage = `linear-gradient(to right, rgb(${r},${g},${b}`;
       }
 
       function colorCall() {
@@ -148,9 +109,6 @@
         color7.style.backgroundColor = 'black';
       }
     </script>
-    <script>
-      // colorGen();
-    </script>
-    <!-- <script src="hello.js" async defer></script> -->
+    <script></script>
   </body>
 </html>
