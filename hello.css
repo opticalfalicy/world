@@ -88,13 +88,22 @@ h1 {
   position: relative;
   z-index: 5;
   height: 2vh;
-  transition: 1s;
   opacity: 0;
+  animation: sigFade 15s forwards;
 }
-.sig:hover {
+
+@keyframes sigFade{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: .5;
+  }
+}
+/*.sig:hover {
   opacity: 0.6;
   z-index: 5;
-}
+}*/
 
 .sig h5 {
   margin-right: 2%;
